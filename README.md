@@ -28,7 +28,9 @@ Why did you commit binaries, do you no git gud?
 
 Well, I MOSTLY git gud, [read my book on Git if you like](https://gavd.co.uk/2021/09/book-git-workflow-discipline/).
 
-The binaries are committed to make it easier to play it on an emulator - it's simple hosting without faffing around. I'm on a tight timescale as a parent of small kids!
+The binaries are committed to make it easier to play it on an emulator - it's simple hosting without faffing around. This is a hobby; I'm on a tight timescale as a parent of small kids!
+
+Although if there's a nigh-zero effort better way to publish a binary that I can easily update, lemme know!
 
 How do I play this on a real Arduboy?
 --
