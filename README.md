@@ -12,7 +12,7 @@ This is a simple platform game for the Arduboy platform. Can you guide Mitty the
 Plaforms
 --
 
-Developed on Mac and Windows using an Arduboy FX.
+Developed on Mac and Windows in [Arduino IDE](https://www.arduino.cc/en/software) using an [Arduboy FX](https://www.arduboy.com/shop/p/arduboy-fx) (I bought one from CoolComponents after the one I built myself failed with a sheared USB socket on the Leonardo board).
 
 Target platform: [Arduboy](https://www.arduboy.com/)
 
