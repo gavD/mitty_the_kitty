@@ -35,7 +35,17 @@ Plaforms
 
 Developed on Mac and Windows in [Arduino IDE](https://www.arduino.cc/en/software) using an [Arduboy FX](https://www.arduboy.com/shop/p/arduboy-fx) (I bought one from CoolComponents after the one I built myself failed with a sheared USB socket on the Leonardo board).
 
-Target platform: [Arduboy](https://www.arduboy.com/)
+Target platform: [Arduboy](https://www.arduboy.com/). Arduboy is an Arduino-based gaming platform; it's super low powered but it has a fast(ish!) CPU:
+
+- Processor: ATmega32u4 (same as Arduino Leonardo & Micro)
+- Memory: 32KB Flash, 2.5KB RAM, 1KB EEPROM
+- Inputs: 6 Momentary Tactile Buttons
+- Outputs: 128×64 1Bit OLED, 4 Ch. Piezo Speaker & Blinky LED
+- Battery: 180 mAh Thin-Film Lithium Polymer
+- Connectivity: Micro-USB 2.0 w/ built in HID profile
+- Programming: Arduino IDE, Arduboy Game Loader, GCC & AVRDude
+
+Basically, it's 80s 8-bit with a faster CPU, 1 bit graphics, and a much smoother dev experience!
 
 Why did you commit binaries, do you no git gud?
 --
