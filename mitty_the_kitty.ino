@@ -7,31 +7,31 @@ Arduboy2 arduboy;  // The main Arduboy library
 // Constants - these are defined to give contextual information instead of "magic numbers"
 
 // Constants - enemies
-#define BAT_Y_TO_PIXEL_MULTIPLER 10  // Multiplier from bat's per-pixel position to hi-res position
-#define BAT_Y_INITIAL 10
-#define BAT_Y_MAX 530                     // Hi-res max y-position of the bat
-#define BIRD_INITIAL_Y 710                // Hi-res initial y-position of the bird - to perch it at the top of a tree
-#define BIRD_X_TO_PIXEL_MULTIPLIER 4      // Multiplier from bird's per-pixel x position to hi-res position
-#define BIRD_Y_TO_PIXEL_MULTIPLIER 23     // Multiplier from bird's per-pixel y position to hi-res position
-#define SQUIRREL_START_X 6600             // Start the squirrel way off screen. This is a hi-res position, which divides down to a pixel position.
-#define SQUIRREL_X_TO_PIXEL_MULTIPLER 30  // Multiplier from squirrel's per-pixel position to hi-res position
+constexpr uint8_t BAT_Y_TO_PIXEL_MULTIPLER = 10;  // Multiplier from bat's per-pixel position to hi-res position
+constexpr uint8_t BAT_Y_INITIAL = 10;
+constexpr uint16_t BAT_Y_MAX = 530;                     // Hi-res max y-position of the bat
+constexpr uint16_t BIRD_INITIAL_Y = 710;                // Hi-res initial y-position of the bird - to perch it at the top of a tree
+constexpr uint8_t BIRD_X_TO_PIXEL_MULTIPLIER = 4;      // Multiplier from bird's per-pixel x position to hi-res position
+constexpr uint8_t BIRD_Y_TO_PIXEL_MULTIPLIER = 23;     // Multiplier from bird's per-pixel y position to hi-res position
+constexpr uint16_t SQUIRREL_START_X = 6600;             // Start the squirrel way off screen. This is a hi-res position, which divides down to a pixel position.
+constexpr uint8_t SQUIRREL_X_TO_PIXEL_MULTIPLER = 30;  // Multiplier from squirrel's per-pixel position to hi-res position
 
 // Constants - player
-#define PLAYER_DUFF_COOLDOWN_X 22            // How many frames between Mitty's attacks
-#define PLAYER_X_INITIAL 1                   // Position Mitty starts at
-#define PLAYER_LIVES_INITIAL 3               // How many lives Mitty starts with
-#define PLAYER_SPRITE_FACING_LEFT_OFFSET 4   // Frame offset of the player sprite if facing left
-#define PLAYER_SPRITE_FACING_RIGHT_OFFSET 0  // Frame offset of the player sprite if facing right
-#define PLAYER_X_TO_PIXEL_MULTIPLIER 20      // Multiplier from the player's per-pixel position to hi-res Xposition
+constexpr uint8_t PLAYER_DUFF_COOLDOWN_X = 22;            // How many frames between Mitty's attacks
+constexpr uint8_t PLAYER_X_INITIAL = 1;                   // Position Mitty starts at
+constexpr uint8_t PLAYER_LIVES_INITIAL = 3;               // How many lives Mitty starts with
+constexpr uint8_t PLAYER_SPRITE_FACING_LEFT_OFFSET=  4;   // Frame offset of the player sprite if facing left
+constexpr uint8_t PLAYER_SPRITE_FACING_RIGHT_OFFSET = 0;  // Frame offset of the player sprite if facing right
+constexpr uint8_t PLAYER_X_TO_PIXEL_MULTIPLIER = 20;      // Multiplier from the player's per-pixel position to hi-res Xposition
 
 // Constants - game state
-#define GAME_STATE_INTRO 0
-#define GAME_STATE_LEVEL_TRANSITION 1
-#define GAME_STATE_GAME 2
-#define GAME_STATE_GAME_OVER 3
-#define GAME_STATE_WON 4
+constexpr uint8_t GAME_STATE_INTRO = 0;
+constexpr uint8_t GAME_STATE_LEVEL_TRANSITION = 1;
+constexpr uint8_t GAME_STATE_GAME = 2;
+constexpr uint8_t GAME_STATE_GAME_OVER = 3;
+constexpr uint8_t GAME_STATE_WON = 4;
 
-// BARE globals fam. This is C, cuz!
+// BARE globals fam
 
 // player state
 bool player_ducking = false;                  // whether the player is ducking right now
@@ -194,7 +194,7 @@ inline void displayScreenIntro() {
   level = 0;
   player_lives = PLAYER_LIVES_INITIAL;
   arduboy.setCursor(1, 5);
-  arduboy.print("Mitty the Kitty");
+  arduboy.print("Mitty the Kitty 0.2");
   arduboy.setCursor(2, 18);
   arduboy.print("A game by");
   arduboy.setCursor(2, 28);

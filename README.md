@@ -5,14 +5,14 @@ Mitty The Kitty: Arduboy 2d game
 
 ![Screenshot](mitty.png "Mitty the Kitty gameplay screenshot")
 
-My kids (5 and 4 at the time) designed this game and did most of the sprite work. I've withheld their names for their privacy but it was fun to work on this project with them!
+The Sky Mice themselves designed the concept and sprite work for this Arduboy platform game! My kids (5 and 4 at the time) designed this game and did most of the sprite work. I've withheld their names for their privacy but it was fun to work on this project with them!
 
 This is a simple platform game for the Arduboy platform. Can you guide Mitty the Kitty past obstacles and enemies to beat all 8 levels? A "duff" is "Bean"'s parlance for hitting something! Mitty is one of my kids' cat teddies.
 
 Playing on an emulator
 --
 
-[Play Mitty the Kitty on the ProjectABE emulator](https://felipemanga.github.io/ProjectABE/?url=https://github.com/gavD/mitty_the_kitty/raw/main/build/arduino.avr.leonardo/mitty_the_kitty.ino.hex&skin=BareFit&Color=FFFFFF)
+[Play Mitty the Kitty on the ProjectABE emulator](https://felipemanga.github.io/ProjectABE/?url=https://github.com/gavD/mitty_the_kitty/releases/latest/download/mitty_the_kitty.ino.hex)
 
 Controls:
 - Arrow keys: move
@@ -23,6 +23,8 @@ How do I play this on a _real_ Arduboy?
 --
 
 First, buy or build an Arduboy. There's some kits, but I found the real deal to be more reliable (USBs shear off Arduino Leonardos SO easily, so the one I built was bunk!).
+
+You can get [releases of Mitty the Kitty from Github](https://github.com/gavD/mitty_the_kitty/releases). You need the .hex file.
 
 Then, here are some docs to get you started transferring Mitty the Kitty to your Arduboy:
 
